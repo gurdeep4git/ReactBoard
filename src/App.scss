@@ -1,0 +1,33 @@
+@import "./assets/scss/variables";
+
+body{
+  overflow: hidden;
+}
+.main-wrapper::after {
+    display: block;
+    content: "";
+    clear: both;
+} 
+.side-wrapper{
+  padding: 20px;
+  float: left;
+  width: 300px;
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: $bg-color;
+  height: 100%;
+  box-sizing: border-box;
+  color:$white;
+}
+.content-wrapper{
+  float: right;
+  width: calc(100% - 300px);
+
+  .content{
+    padding: 0 20px; 
+    background-color: $bg-color;
+    height: calc(100vh - 61px);
+    overflow-y: auto;
+  }
+}

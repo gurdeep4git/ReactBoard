@@ -1,0 +1,33 @@
+@import "../../assets/scss/variables";
+
+.navigation{
+    background: #0098f0;
+    background: linear-gradient(0deg,#0098f0,#00f2c3);
+    box-shadow: 0 0 45px 0 rgba(0,0,0,.6);
+    border-radius: 5px;
+    width: 100%;
+    height: calc(100% - 40px);
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li{
+        display: block;
+    }
+
+    a{
+        display: block;
+        width: 100%;
+        padding: 22px;
+        color:$white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span{
+            
+        }
+    }
+}
